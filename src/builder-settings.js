@@ -16,7 +16,8 @@ import './components/ProductsListWithServerSideData/ProductsListWithServerSideDa
 import './components/CustomColumns/CustomColumns.builder';
 
 // Add your public apiKey here
-const YOUR_KEY = 'b1d8cca277fd46d69693ace0532f7baa';
+// const YOUR_KEY = 'b1d8cca277fd46d69693ace0532f7baa';
+const YOUR_KEY = process.env.BUILDER_KEY
 builder.init(YOUR_KEY);
 
 // Remove this to allow all built-in components to be used too
