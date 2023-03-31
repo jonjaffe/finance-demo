@@ -16,8 +16,8 @@ import './components/ProductsListWithServerSideData/ProductsListWithServerSideDa
 import './components/CustomColumns/CustomColumns.builder';
 
 // Add your public apiKey here
-const YOUR_KEY = 'b1d8cca277fd46d69693ace0532f7baa';
-// const YOUR_KEY = process.env.BUILDER_KEY
+// const YOUR_KEY = 'b1d8cca277fd46d69693ace0532f7baa';
+const YOUR_KEY = process.env.REACT_APP_BUILDER_KEY
 console.log("key used" + " " + YOUR_KEY)
 console.log(process.env)
 builder.init(YOUR_KEY);
