@@ -1,9 +1,5 @@
 import { Builder, builder } from '@builder.io/react';
 
-const YOUR_KEY = process.env.BUILDER_KEY;
-console.log("key used" + " " + YOUR_KEY);
-builder.init(YOUR_KEY);
-
 // Be sure to import all of your components where you use <BuilderComponent /> so they are
 // bundled and accessible
 import './components/ProductsList/ProductsList.builder';
@@ -20,8 +16,10 @@ import './components/ProductsListWithServerSideData/ProductsListWithServerSideDa
 import './components/CustomColumns/CustomColumns.builder';
 
 // Add your public apiKey here
-// const YOUR_KEY = 'b1d8cca277fd46d69693ace0532f7baa';
-
+const YOUR_KEY = 'b1d8cca277fd46d69693ace0532f7baa';
+// const YOUR_KEY = process.env.BUILDER_KEY
+console.log("key used" + " " + YOUR_KEY)
+builder.init(YOUR_KEY);
 
 // Remove this to allow all built-in components to be used too
 const OVERRIDE_INSERT_MENU = false;
