@@ -21,6 +21,7 @@ const YOUR_KEY = process.env.REACT_APP_BUILDER_KEY
 console.log("key used" + " " + YOUR_KEY)
 console.log(process.env)
 builder.init(YOUR_KEY);
+builder.setUserAttributes({isLoggedIn: true, customerGroup: "VIP"})
 
 // Remove this to allow all built-in components to be used too
 const OVERRIDE_INSERT_MENU = false;
